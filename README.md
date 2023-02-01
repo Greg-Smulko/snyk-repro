@@ -19,3 +19,4 @@ Notice that:
 - the `Proj2/obj/project.assets.json` file lists both `Autofac` and `Serilog`
 - only `Serilog` is listed as a dependency in Snyk
 
+Note that `project.assets.json` contains all of this info: https://github.com/Greg-Smulko/snyk-repro/blob/main/SnykRepro/Proj2/obj/project.assets.json includes Autofac.
