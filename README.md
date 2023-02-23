@@ -20,3 +20,9 @@ Notice that:
 - only `Serilog` is listed as a dependency in Snyk
 
 Note that `project.assets.json` contains all of this info: https://github.com/Greg-Smulko/snyk-repro/blob/main/SnykRepro/Proj2/obj/project.assets.json includes Autofac.
+
+## Update
+
+Also notice another problem - I've referenced another dependency `Newtonsoft.Json` in different versions to projects `Proj1` and `Proj2`.
+
+This is to demonstrate that scanning both projects separately results in invalid result - namely, the older version of `Newtonsoft.Json` (coming from `Proj1`) is also treated as a dependency, even though it doesn't end up as a dependency of `Proj2`.
