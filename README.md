@@ -26,3 +26,7 @@ Note that `project.assets.json` contains all of this info: https://github.com/Gr
 Also notice another problem - I've referenced another dependency `Newtonsoft.Json` in different versions to projects `Proj1` and `Proj2`.
 
 This is to demonstrate that scanning both projects separately results in invalid result - namely, the older version of `Newtonsoft.Json` (coming from `Proj1`) is also treated as a dependency, even though it doesn't end up as a dependency of `Proj2`.
+
+## Update 2
+
+Added dev dependency `Microsoft.VisualStudio.Threading.Analyzers` to illustrate the problem as described in https://github.com/snyk/snyk-nuget-plugin/issues/121.
