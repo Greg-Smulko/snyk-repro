@@ -1,0 +1,147 @@
+Executing: C:\ProgramData\nvm\v21.0.0\node_modules\snyk\wrapper_dist\snyk-win.exe monitor -d --file=D:\Code\snyk-repro\ReproBeta\ProjNet8\obj\project.assets.json --org=cb81bffb-9301-4793-9e8b-4ae26497cfd8 --package-manager=nuget --target-reference=ReproBeta2 --dotnet-runtime-resolution
+2024-03-12T17:17:38Z main - Version:               1.1283.0
+2024-03-12T17:17:38Z main - Platform:              windows amd64
+2024-03-12T17:17:38Z main - API:                   https://api.snyk.io
+2024-03-12T17:17:38Z main - Cache:                 C:\Users\okli\AppData\Local/snyk/snyk-cli
+2024-03-12T17:17:38Z main - Organization:          cb81bffb-9301-4793-9e8b-4ae26497cfd8
+2024-03-12T17:17:38Z main - Insecure HTTPS:        false
+2024-03-12T17:17:38Z main - Analytics:             enabled
+2024-03-12T17:17:38Z main - Authorization:         4481b04f1d139c9eda86f2a7686a5519[...]  (type=token)
+2024-03-12T17:17:38Z main - Features:
+2024-03-12T17:17:38Z main -   oauth:               Enabled
+2024-03-12T17:17:38Z main -   fips:                Not available
+2024-03-12T17:17:38Z main - Using Legacy CLI to serve the command. (reason: unknown command "monitor" for "snyk")
+2024-03-12T17:17:38Z legacycli:1 - Arguments: [monitor -d --file=D:\Code\snyk-repro\ReproBeta\ProjNet8\obj\project.assets.json --org=cb81bffb-9301-4793-9e8b-4ae26497cfd8 --package-manager=nuget --target-reference=ReproBeta2 --dotnet-runtime-resolution]
+2024-03-12T17:17:38Z legacycli:1 - Use StdIO: true
+2024-03-12T17:17:38Z legacycli:1 - Working directory:
+2024-03-12T17:17:38Z legacycli:1 - Init start
+2024-03-12T17:17:38Z legacycli:1 - Init-Lock acquired: true (C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0.lock)
+2024-03-12T17:17:38Z legacycli:1 - Validating sha256 of C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0/snyk-win.exe
+2024-03-12T17:17:39Z legacycli:1 - expected:  6cd0c31302b9c3e6414323183d5590093a383cc5550c755b81b710dc3d73d231
+2024-03-12T17:17:39Z legacycli:1 - actual:    6cd0c31302b9c3e6414323183d5590093a383cc5550c755b81b710dc3d73d231
+2024-03-12T17:17:39Z legacycli:1 - Extraction not required
+2024-03-12T17:17:39Z legacycli:1 - Init end
+2024-03-12T17:17:39Z legacycli:1 - Temporary CertificateLocation: C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0/tmp\snyk-cli-cert-699076427.crt
+2024-03-12T17:17:39Z legacycli:1 - Enabled Proxy Authentication Mechanism: Anyauth
+2024-03-12T17:17:39Z legacycli:1 - starting proxy
+2024-03-12T17:17:39Z legacycli:1 - Wrapper proxy is listening on port:  55134
+2024-03-12T17:17:39Z legacycli:1 - Launching:
+2024-03-12T17:17:39Z legacycli:1 - C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0/snyk-win.exe
+2024-03-12T17:17:39Z legacycli:1 - With Arguments:
+2024-03-12T17:17:39Z legacycli:1 - monitor, -d, --file=D:\Code\snyk-repro\ReproBeta\ProjNet8\obj\project.assets.json, --org=cb81bffb-9301-4793-9e8b-4ae26497cfd8, --package-manager=nuget, --target-reference=ReproBeta2, --dotnet-runtime-resolution
+2024-03-12T17:17:39Z legacycli:1 - With Environment:
+2024-03-12T17:17:39Z legacycli:1 - NODE_EXTRA_CA_CERTS = C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0/tmp\snyk-cli-cert-699076427.crt
+2024-03-12T17:17:39Z legacycli:1 - HTTPS_PROXY = http://snykcli:41ecc034-ae5e-42dc-9c49-06b2429b9c95@127.0.0.1:55134
+2024-03-12T17:17:39Z legacycli:1 - HTTP_PROXY = http://snykcli:41ecc034-ae5e-42dc-9c49-06b2429b9c95@127.0.0.1:55134
+2024-03-12T17:17:39Z legacycli:1 - NO_PROXY = localhost,127.0.0.1,::1
+2024-03-12T17:17:39Z legacycli:1 - SNYK_SYSTEM_HTTPS_PROXY =
+2024-03-12T17:17:39Z legacycli:1 - SNYK_SYSTEM_HTTP_PROXY =
+2024-03-12T17:17:39Z legacycli:1 - SNYK_SYSTEM_NO_PROXY =
+2024-03-12T17:17:39.382Z snyk monitor <ref *1> {
+  _: [ [Circular *1] ],
+  debug: true,
+  file: 'D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8\\obj\\project.assets.json',
+  org: 'cb81bffb-9301-4793-9e8b-4ae26497cfd8',
+  'target-reference': 'ReproBeta2',
+  'dotnet-runtime-resolution': true,
+  packageManager: 'nuget'
+}
+2024-03-12T17:17:39.787Z snyk Processing D:\Code\snyk-repro\ReproBeta...
+2024-03-12T17:17:39.788Z snyk getDepsFromPlugin ...
+
+⚠ WARNING: Testing a .NET project with runtime resolution enabled.
+This should be considered experimental and not relied upon for production use.
+Please report issues with this beta feature by submitting a support ticket, and attach the output of running this command
+with the debug (-d) flag at https://support.snyk.io/hc/en-us/requests/new.
+2024-03-12T17:17:39.792Z snyk Parsing content of D:\Code\snyk-repro\ReproBeta\ProjNet8\obj\project.assets.json
+2024-03-12T17:17:39.793Z snyk running dotnet command: version: dotnet
+2024-03-12T17:17:39.932Z snyk running dotnet command: publish: dotnet
+Error:
+Monitoring D:\Code\snyk-repro\ReproBeta...
+
+dotnet publish failed with error:   Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Program Files\dotnet\sdk\8.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1005: Assets file 'D:\Code\snyk-repro\ReproBeta\ProjNet8Win\obj\project.assets.json' doesn't have a target for 'net8.0-windows'. Ensure that restore has run and that you have included 'net8.0-windows' in the TargetFrameworks for your project. [D:\Code\snyk-repro\ReproBeta\ProjNet8Win\ProjNet8Win.csproj]
+  ProjNet8 -> D:\Code\snyk-repro\ReproBeta\ProjNet8\bin\Release\net8.0-windows\win-x64\ProjNet8.dll
+  ProjNet8 -> C:\Users\okli\AppData\Local\Temp\snyk-nuget-plugin-publish-csharp-v9C07J\
+
+    at monitor (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\commands\monitor\index.ts:346:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runCommand (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\main.ts:55:25)
+    at main (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\main.ts:336:11)
+    at C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\index.ts:13:3
+    at callHandlingUnexpectedErrors (C:\snapshot\project\dist\cli\webpack:\snyk\src\lib\unexpected-error.ts:28:5)
+2024-03-12T17:17:41.871Z snyk Exit code: 2
+2024-03-12T17:17:41.981Z snyk analytics {
+  "args": [
+    {
+      "debug": true,
+      "file": "D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8\\obj\\project.assets.json",
+      "org": "cb81bffb-9301-4793-9e8b-4ae26497cfd8",
+      "target-reference": "ReproBeta2",
+      "dotnet-runtime-resolution": true,
+      "packageManager": "nuget"
+    }
+  ],
+  "command": "bad-command",
+  "org": "cb81bffb-9301-4793-9e8b-4ae26497cfd8",
+  "metadata": {
+    "error-message": "\nMonitoring D:\\Code\\snyk-repro\\ReproBeta...\n\ndotnet publish failed with error:   Determining projects to restore...\r\n  All projects are up-to-date for restore.\r\nC:\\Program Files\\dotnet\\sdk\\8.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1005: Assets file 'D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8Win\\obj\\project.assets.json' doesn't have a target for 'net8.0-windows'. Ensure that restore has run and that you have included 'net8.0-windows' in the TargetFrameworks for your project. [D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8Win\\ProjNet8Win.csproj]\r\n  ProjNet8 -> D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8\\bin\\Release\\net8.0-windows\\win-x64\\ProjNet8.dll\r\n  ProjNet8 -> C:\\Users\\okli\\AppData\\Local\\Temp\\snyk-nuget-plugin-publish-csharp-v9C07J\\\r\n",
+    "error": "Error: \nMonitoring D:\\Code\\snyk-repro\\ReproBeta...\n\ndotnet publish failed with error:   Determining projects to restore...\r\n  All projects are up-to-date for restore.\r\nC:\\Program Files\\dotnet\\sdk\\8.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1005: Assets file 'D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8Win\\obj\\project.assets.json' doesn't have a target for 'net8.0-windows'. Ensure that restore has run and that you have included 'net8.0-windows' in the TargetFrameworks for your project. [D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8Win\\ProjNet8Win.csproj]\r\n  ProjNet8 -> D:\\Code\\snyk-repro\\ReproBeta\\ProjNet8\\bin\\Release\\net8.0-windows\\win-x64\\ProjNet8.dll\r\n  ProjNet8 -> C:\\Users\\okli\\AppData\\Local\\Temp\\snyk-nuget-plugin-publish-csharp-v9C07J\\\r\n\n    at monitor (C:\\snapshot\\project\\dist\\cli\\webpack:\\snyk\\src\\cli\\commands\\monitor\\index.ts:346:9)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runCommand (C:\\snapshot\\project\\dist\\cli\\webpack:\\snyk\\src\\cli\\main.ts:55:25)\n    at main (C:\\snapshot\\project\\dist\\cli\\webpack:\\snyk\\src\\cli\\main.ts:336:11)\n    at C:\\snapshot\\project\\dist\\cli\\webpack:\\snyk\\src\\cli\\index.ts:13:3\n    at callHandlingUnexpectedErrors (C:\\snapshot\\project\\dist\\cli\\webpack:\\snyk\\src\\lib\\unexpected-error.ts:28:5)",
+    "command": "monitor"
+  },
+  "os": "Windows 11",
+  "osPlatform": "win32",
+  "osRelease": "10.0.22621",
+  "osArch": "x64",
+  "version": "1.1283.0",
+  "nodeVersion": "v18.5.0",
+  "standalone": true,
+  "integrationName": "CLI_V1_PLUGIN",
+  "integrationVersion": "1.1283.0",
+  "integrationEnvironment": "",
+  "integrationEnvironmentVersion": "",
+  "id": "138271cd9ccc2deb3811e92264e369339a74b297",
+  "ci": false,
+  "durationMs": 2489,
+  "metrics": {
+    "network_time": {
+      "type": "timer",
+      "values": [],
+      "total": 0
+    },
+    "cpu_time": {
+      "type": "synthetic",
+      "values": [
+        2489
+      ],
+      "total": 2489
+    }
+  }
+}
+2024-03-12T17:17:41Z legacycli:1 - [001] INFO: Running 1 CONNECT handlers
+2024-03-12T17:17:41.983Z snyk sending request to: https://api.snyk.io/v1/analytics/cli
+2024-03-12T17:17:41.983Z snyk request body size: 3120
+2024-03-12T17:17:41.983Z snyk gzipped request body size: 1061
+2024-03-12T17:17:41.985Z snyk using proxy: http://snykcli:41ecc034-ae5e-42dc-9c49-06b2429b9c95@127.0.0.1:55134
+2024-03-12T17:17:42Z legacycli:1 - HandleConnect - basic authentication result:  &{0 <nil> 0x12d3220} api.snyk.io:443
+2024-03-12T17:17:42Z legacycli:1 - [001] INFO: on 0th handler: &{2 <nil> 0x12d2e20} api.snyk.io:443
+2024-03-12T17:17:42Z legacycli:1 - [001] INFO: Assuming CONNECT is TLS, mitm proxying it
+2024-03-12T17:17:42Z legacycli:1 - [001] INFO: signing for api.snyk.io
+2024-03-12T17:17:42Z legacycli:1 - [002] INFO: req api.snyk.io:443
+2024-03-12T17:17:42Z legacycli:1 - [002] INFO: Sending request POST https://api.snyk.io:443/v1/analytics/cli?org=cb81bffb-9301-4793-9e8b-4ae26497cfd8 2024-03-12T17:17:42Z legacycli:1 - [002] INFO: resp 200 OK
+2024-03-12T17:17:42Z legacycli:1 - [001] INFO: Exiting on EOF
+2024-03-12T17:17:42Z legacycli:1 - Proxy successfully shut down
+2024-03-12T17:17:42Z legacycli:1 - deleting temp cert file: C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0/tmp\snyk-cli-cert-699076427.crt
+2024-03-12T17:17:42Z legacycli:1 - deleted temp cert file: C:\Users\okli\AppData\Local/snyk/snyk-cli/1.1283.0/tmp\snyk-cli-cert-699076427.crt
+2024-03-12T17:17:42Z main - Exiting with 2
+2024-03-12T17:17:42Z main - Sending Analytics
+2024-03-12T17:17:42Z main - Analytics successfully send
+{
+  status: 2,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 30284,
+  stdout: null,
+  stderr: null
+}

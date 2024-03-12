@@ -1,0 +1,40 @@
+
+[33m⚠ WARNING[0m: Testing a .NET project with runtime resolution enabled. 
+This should be considered experimental and not relied upon for production use.
+Please report issues with this beta feature by submitting a support ticket, and attach the output of running this command
+with the debug (-d) flag at [4mhttps://support.snyk.io/hc/en-us/requests/new[0m.
+Error: 
+Monitoring D:\Code\snyk-repro\ReproBeta...
+
+dotnet publish failed with error:   Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Program Files\dotnet\sdk\8.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1005: Assets file 'D:\Code\snyk-repro\ReproBeta\ProjNet8Win\obj\project.assets.json' doesn't have a target for 'net8.0-windows'. Ensure that restore has run and that you have included 'net8.0-windows' in the TargetFrameworks for your project. [D:\Code\snyk-repro\ReproBeta\ProjNet8Win\ProjNet8Win.csproj]
+  ProjNet8 -> D:\Code\snyk-repro\ReproBeta\ProjNet8\bin\Release\net8.0-windows\win-x64\ProjNet8.dll
+  ProjNet8 -> C:\Users\okli\AppData\Local\Temp\snyk-nuget-plugin-publish-csharp-bl1vKA\
+
+    at monitor (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\commands\monitor\index.ts:346:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runCommand (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\main.ts:55:25)
+    at main (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\main.ts:336:11)
+    at C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\index.ts:13:3
+    at callHandlingUnexpectedErrors (C:\snapshot\project\dist\cli\webpack:\snyk\src\lib\unexpected-error.ts:28:5)
+
+[33m⚠ WARNING[0m: Testing a .NET project with runtime resolution enabled. 
+This should be considered experimental and not relied upon for production use.
+Please report issues with this beta feature by submitting a support ticket, and attach the output of running this command
+with the debug (-d) flag at [4mhttps://support.snyk.io/hc/en-us/requests/new[0m.
+Error: 
+Monitoring D:\Code\snyk-repro\ReproBeta...
+
+dotnet publish failed with error:   Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Program Files\dotnet\sdk\8.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1005: Assets file 'D:\Code\snyk-repro\ReproBeta\ProjNet8Win\obj\project.assets.json' doesn't have a target for 'net8.0-windows'. Ensure that restore has run and that you have included 'net8.0-windows' in the TargetFrameworks for your project. [D:\Code\snyk-repro\ReproBeta\ProjNet8Win\ProjNet8Win.csproj]
+  ProjNet8 -> D:\Code\snyk-repro\ReproBeta\ProjNet8\bin\Release\net8.0-windows\win-x64\ProjNet8.dll
+  ProjNet8 -> C:\Users\okli\AppData\Local\Temp\snyk-nuget-plugin-publish-csharp-8VPQBN\
+
+    at monitor (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\commands\monitor\index.ts:346:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runCommand (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\main.ts:55:25)
+    at main (C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\main.ts:336:11)
+    at C:\snapshot\project\dist\cli\webpack:\snyk\src\cli\index.ts:13:3
+    at callHandlingUnexpectedErrors (C:\snapshot\project\dist\cli\webpack:\snyk\src\lib\unexpected-error.ts:28:5)
